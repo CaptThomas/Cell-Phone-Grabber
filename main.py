@@ -63,8 +63,8 @@ for let in [
         for a_element in a_elements:
             # Get the href of each a tag and store in links
             links.append(a_element.get_attribute("href"))
-        for link in links:
-            browser.get(link)
+        for l in links:
+            browser.get(l)
             time.sleep(1)
             div_elements = browser.find_elements(By.CLASS_NAME, "phone")
             for div_element in div_elements:
